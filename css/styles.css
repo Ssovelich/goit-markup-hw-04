@@ -112,7 +112,18 @@ a {
 .section-one {
   background-color: #2e2f42;
   padding: 188px 0;
+  border: 1px solid #000;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .titel-section-one {
   font-size: 56px;
   line-height: 1.07;
@@ -171,6 +182,19 @@ a {
 .item-benefits {
   width: calc((100% - 3 * 24px) / 4);
 }
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264pxpx;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
 
 /* section-three */
 .section.back {
@@ -203,6 +227,25 @@ a {
   display: flex;
   gap: 24px;
   justify-content: space-between;
+}
+.social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.social-list .link:hover,
+.social-list .link:focus {
+  background-color: #404bbf;
 }
 
 /*section-four*/
