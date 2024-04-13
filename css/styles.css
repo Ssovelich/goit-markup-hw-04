@@ -77,8 +77,9 @@ a {
   letter-spacing: 0.02em;
   font-style: normal;
 }
-.contacts a {
+.contacts-link {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -89,6 +90,8 @@ a {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .navi {
   display: flex;
@@ -119,6 +122,7 @@ a {
 }
 .studio {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section-one */
@@ -135,6 +139,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .titel-section-one {
@@ -164,6 +169,7 @@ a {
   height: 56px;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -255,10 +261,14 @@ a {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list .link:hover,
 .social-list .link:focus {
   background-color: #404bbf;
+}
+.icon {
+  fill: #f4f4fd;
 }
 
 /*section-four*/
@@ -326,6 +336,9 @@ a {
 .social-text-foot {
   color: #fff;
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 .social-list.foot {
   gap: 16px;
@@ -337,7 +350,11 @@ a {
 }
 .container.foot {
   display: flex;
+  align-items: baseline;
 }
-.social-container {
-  margin-left: 120px;
+.device-foot {
+  margin-right: 120px;
+}
+.social-list.foot .link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
