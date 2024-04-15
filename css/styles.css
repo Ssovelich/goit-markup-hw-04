@@ -4,10 +4,10 @@ body {
   background-color: #ffffff;
 }
 a:link {
-  text-decoration: none;
+  text-decoration: none; /*прибирання підкреслювання для посилань*/
 }
 ul {
-  list-style-type: none;
+  list-style-type: none; /*прибирання маркерів елементів списку*/
   margin: 0;
   padding-left: 0;
 }
@@ -31,6 +31,7 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+/*приховування непотрібного заголовка*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -110,46 +111,47 @@ a {
   padding: 24px 0;
 }
 .menu-link {
-  position: relative;
+  position: relative; /*відносне позиціювання*/
 }
+/* додатковий клас для стилізації через псевдоелемент */
 .studio::after {
   content: "";
-  position: absolute;
-  left: 0;
+  position: absolute; /*позіціювання відносно батьківського єлементу "menu-link"*/
+  left: 0; /*візуальне зміщення елемента відносно його вихідного положення*/
   bottom: -1px;
-  width: 100%;
+  width: 100%; /*ширина по батьківсбкому елементу*/
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
 }
 .studio {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавна зміна кольору(властив_тривал_функц.часу_затримка)*/
 }
 
 /* section-one */
 .section-one {
   background-color: #2e2f42;
   padding: 188px 0;
-  border: 1px solid #000000;
+  border: 1px solid #000000; /*рамка 1рх суцільна*/
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/people-office-1.jpg); /*затемнення зображення*/
+  background-repeat: no-repeat; /*фонове зобреження без повторень в елеиенті*/
+  background-position: center; /* початкова позицію (зміщення) фонового зображення*/
+  background-size: cover; /*розмір зображення:зображення заповн.весь контейнер*/
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .titel-section-one {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
+  font-size: 56px; /*розмір шрифту*/
+  line-height: 1.07; /*висота рядка*/
+  letter-spacing: 0.02em; /*інтервал між символами*/
+  text-align: center; /*вирівнювання тексту*/
   color: #ffffff;
   max-width: 496px;
   margin-right: auto;
@@ -164,7 +166,7 @@ a {
   color: #ffffff;
   background-color: #4d5ae5;
   border: #4d5ae5;
-  cursor: pointer;
+  cursor: pointer; /*курсор при наведенні палець*/
   margin-top: 48px;
   display: block;
   border-radius: 4px;
@@ -172,7 +174,7 @@ a {
   height: 56px;
   margin-right: auto;
   margin-left: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавна зміна кольору*/
 }
 .button:hover,
 .button:focus {
@@ -206,8 +208,8 @@ a {
 }
 .icon-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /*вирівнювання по горизонталі*/
+  align-items: center; /*вирівнювання по вертикалі*/
   width: 264pxpx;
   height: 112px;
   border: 1px solid #8e8f99;
@@ -250,30 +252,30 @@ a {
 .team-list {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  justify-content: space-between; /*вирівнювання по горизонталі*/
 }
 .social-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
+  justify-content: center; /*вирівнювання по горизонталі*/
   margin-top: 16px;
 }
 .link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /*вирівнювання по горизонталі*/
+  align-items: center; /*вирівнювання по вертикалі*/
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавна зміна кольору*/
 }
 .social-list .link:hover,
 .social-list .link:focus {
   background-color: #404bbf;
 }
 .icon {
-  fill: #f4f4fd;
+  fill: #f4f4fd; /*колір фону іконки*/
 }
 
 /*section-four*/
@@ -294,9 +296,9 @@ a {
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+  flex-wrap: wrap; /*Гнучкі елементи шикуються в кілька рядків*/
+  row-gap: 48px; /*відступи між рядками*/
+  column-gap: 24px; /*відступи між стовпчиками*/
 }
 .portfolio-item {
   width: 360px;
@@ -305,27 +307,29 @@ a {
 }
 
 .portfolio-image {
-  position: relative;
-  overflow: hidden;
+  position: relative; /*відносне позиціювання*/
+  overflow: hidden; /*для приховання контенту, який виходить за межі елемента*/
 }
 
 .overlay-text {
   padding: 40px 32px;
   background-color: #4d5ae5;
   color: #f4f4fd;
-  position: absolute;
-  top: 0;
+  position: absolute; /*абсолютне позиціювання відносно "portfolio-image"*/
+  top: 0; /*для зміщення елемента до верхньої межі контейнера*/
+  left: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%; /*100% висоти батьківського елемента(portfolio-image)*/
+  width: 100%; /*100% ширини батьківського елемента(portfolio-image)*/
+  transform: translateY(100%); /*зміщуємо вгору на 100% його висоти*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавна зміщення елементу*/
 }
 .portfolio-item:hover .overlay-text {
-  transform: translateY(0%);
+  transform: translateY(
+    0%
+  ); /*Ховер "portfolio-image",повертає "overlay-text" у вихідне положення*/
 }
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -357,8 +361,9 @@ a {
   margin-bottom: 16px;
 }
 .social-list.foot {
-  gap: 16px;
+  display: flex; /*елементи по горизонталі*/
   justify-content: flex-start;
+  gap: 16px;
 }
 .social-list.foot .link:focus {
   background-color: #31d0aa;
@@ -367,8 +372,8 @@ a {
   background-color: #31d0aa;
 }
 .page-footer .container {
-  display: flex;
-  align-items: baseline;
+  display: flex; /*елементи по горизонталі*/
+  align-items: baseline; /*елементи розташовані на початку контейнера*/
 }
 .device-foot {
   margin-right: 120px;
