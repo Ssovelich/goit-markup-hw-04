@@ -366,7 +366,7 @@ a {
 .social-list.foot .link:hover {
   background-color: #31d0aa;
 }
-.container.foot {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
