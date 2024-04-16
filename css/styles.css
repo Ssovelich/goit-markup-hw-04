@@ -371,9 +371,9 @@ a {
 .social-list.foot .link:hover {
   background-color: #31d0aa;
 }
-.page-footer .container {
-  display: flex; /*елементи по горизонталі*/
-  align-items: baseline; /*елементи розташовані на початку контейнера*/
+.container.foot {
+  display: flex; /*елементи розташовані горигонтально*/
+  align-items: baseline; /*елементи розташовані на базовій лінії контейнера*/
 }
 .device-foot {
   margin-right: 120px;
